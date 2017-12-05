@@ -13859,10 +13859,10 @@ max_depth 4 would be the best one to generalize the model as it has a higher val
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span style="color:red"> **Answer: **
-A algorithm to perform hyperparameter optimization through exhaustively search.
+The grid search technique is a algorithm to automate the tuning process of a model through exhaustively search.
 </span></p>
 <p><span style="color:red">
-It perform the model parameters tuning, combining the parameters and experimenting which combination has the best performance at the learning stage.
+It perform the model parameters tuning, combining the parameters into a table (grid) and experimenting which combination has the best performance at the learning stage, allowing a faster performance analysis of the model.
 </span></p>
 
 </div>
@@ -13888,17 +13888,16 @@ It perform the model parameters tuning, combining the parameters and experimenti
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span style="color:red"> **Answer: **
-K-Fold technique is a way to assess the model performance minimizing the data loss in the assess process.
-</span></p>
-<p><span style="color:red"> 
-The data is split between K equal size bins, ones is used as validation set and k-1 are used for training, after training, it's evaluated using the validation set. This method is repeated K times.
-</span></p>
-<p><span style="color:red"> 
-The model performance will be the average of the k times, the procedure was done.
-</span></p>
-<p><span style="color:red"> 
-It allows grid search to perform parameter tuning using the entire data set and not just the training subset in a regular validation technique.
+<p><span style="color:red"> <strong>Answer: </strong>
+K-Fold technique is a way to evaluate the model performance by subsetting the data.</p>
+<p><span style="color:red">
+The data is split between K equal size bins, ones is used as validation data and the remaining k-1 are used for training, this process is repeated K times.</p>
+<p><span style="color:red">
+During the K-fold process each bin will be used once as validation data.</p>
+<p><span style="color:red">
+The model performance will be the average of the k times the procedure was done.</p>
+<p><span style="color:red">
+It allows grid search to perform parameter tuning using the entire data set and not just the training subset as in a regular validation technique.
 </span></p>
 
 </div>
